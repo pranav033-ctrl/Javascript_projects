@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title>Javascript Calculator</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .calc{
+            text-align: center;
+            justify-content: center;
+            /* background-color: rgba(255, 68, 0, 0.623); */
+            height: 240px;
+            
+        }
+
+        input[type=button]{
+            border-radius: 10px;
+            text-align: center;
+            background-color: rgb(212, 94, 16);
+            color: white;
+            height: 60px;
+            width: 50px;
+            margin: auto;
+            font-size: 30px;
+            margin: 1px;
+        }
+
+        input[type = text]{
+            border-radius: 10px;
+            text-align: right;
+            background-color: cadetblue;
+            color: white;
+            border-color: white;
+            width: 240px;
+            height: 60px;
+        }
+
+        #u{
+            width : 100px;
+            background-color: rgb(192, 36, 197);
+        }
+    </style>
+</head>
+<body>
+    <script>  
+    function calc(){
+     let a = document.getElementById("textvalue").value
+     let y = eval(a)
+    document.getElementById("textvalue").value = y
+}
+
+
+function clr(){
+        document.getElementById("textvalue").value = ""
+    }
+
+    function display(val){
+        document.getElementById("textvalue").value+=val
+    }
+
+    </script>
+    <h1> My first project Javascript calculator</h1>
+    <div class = "calc">
+        <input type = "text" id = "textvalue"><br>
+        <input type="button" value="=" onclick="calc()" id = "u">
+        <input type="button" value="C" onclick="clr()" >
+        <input type="button" value="/" onclick="display(value)" ><br>
+        <input type="button" value="1" onclick="display(value)" >
+        <input type="button" value="2" onclick="display(value)" >
+        <input type="button" value="3" onclick="display(value)" >
+        <input type="button" value="+" onclick="display(value)" ><br>
+        <input type="button" value="4" onclick="display(value)" >
+        <input type="button" value="5" onclick="display(value)" >
+        <input type="button" value="6" onclick="display(value)" >
+        <input type="button" value="-" onclick="display(value)" ><br>
+        <input type="button" value="7" onclick="display(value)" >
+        <input type="button" value="8" onclick="display(value)" >
+        <input type="button" value="9" onclick="display(value)" >
+        <input type="button" value="*" onclick="display(value)" ><br>
+    </div>
+</body>
