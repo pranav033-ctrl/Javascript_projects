@@ -1,0 +1,79 @@
+body{
+    background: #232323;
+    margin: 0;
+}
+
+#heading{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: steelblue;
+    margin: 0;
+    color: white;
+    font-family: "Avenir";
+    font-weight: normal;
+    line-height: 1.1;
+    padding: 20px 0;
+}
+
+#colorchoosen{
+    font-size: 200%;
+}
+
+.squares{
+	width:30%;
+	background:purple;
+	padding-top: 30%;
+    margin:1.66%;
+    float:left;
+    /* IT IS USED TO MAKE THAT CORNERS OF 6 GRIDS CIRCULAR FROM CORNERS*/
+    border-radius: 15%;
+    /*here also we will use transition to make that shades fade*/
+    /*note one thing*/
+    /* To create a transition effect, you must specify two things:
+
+ 1.the CSS property you want to add an effect to
+2. the duration of the effect*/
+transition: background 0.4s;
+}
+
+
+#container{
+	max-width:600px;
+	margin:0 auto;
+}
+
+#result{
+    color:darkred;
+    display: inline-block;
+    width: 20%;
+}
+
+
+#stripe{
+    background-color:hwb(60 98% 2%);
+    height: 30px;
+    text-align: center;
+}
+
+.switch{
+    background-color: blue;
+}
+
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1 px;
+    font-size: inherit;
+
+    transition: all 1.0s;
+    outline: none;
+}
+
+button:hover{
+    color:aqua;
+    background: steelblue;
+}
